@@ -1,0 +1,17 @@
+1安装nodejs
+(1)安装nvm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.2/install.sh | bash
+(2)查看nodejs版本
+nvm ls
+(3)安装nodejs
+nvm install 0.12
+(4)选择nodejsbanben
+nvm use v0.12 
+2初始化nodejs工程
+npm init
+3安装支持库 
+npm install express utility --save
+4运行
+node app.js
+5jquery选择器
+http://www.w3school.com.cn/jquery/jquery_ref_selectors.asp

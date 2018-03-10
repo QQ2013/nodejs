@@ -7,7 +7,7 @@ var app = express();
 app.get('/', function (req, res, next) {
     var q = req.query.q;
     console.log("q is:"+q);
-    superagent.get(q)
+    superagent.get("http://luoyang.ganji.com/xiaoqu/d5f"+q*20+"/")
     .end(function (err, sres) {
       if (err) {
         return next(err);
@@ -32,6 +32,6 @@ app.get('/', function (req, res, next) {
 });
 
 
-app.listen(4000, function () {
+app.listen(3000, function () {
   console.log('app is listening at port 3000');
 });
