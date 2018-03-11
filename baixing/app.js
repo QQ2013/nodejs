@@ -19,7 +19,9 @@ app.get('/', function (req, res, next) {
         items.push({
           price: $element.find(".highlight").text(),
           href: $element.find(".media-cap").attr('href'),
-          title: $element.text()
+          title: $element.find(".lazyload").attr('alt')
+          //title: $element.find("img").attr('alt')
+          //title: $element.text()
         });
       });
      var data="";
